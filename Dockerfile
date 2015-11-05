@@ -1,5 +1,5 @@
 FROM ubuntu:14.04
-MAINTAINER Ryan Barber <ryan@directly.com>
+MAINTAINER Ryan Barber <ryan.barber@gmail.com>
 
 # Get puppet repos
 RUN sudo apt-get install -y curl &&\
@@ -12,5 +12,4 @@ RUN apt-get update && apt-get install -y \
 # expose puppet
 EXPOSE 8140
 
-# use baseimage's init system
-CMD ["/opt/puppetlabs/bin/puppetserver","foreground"]
+CMD ["/opt/puppetlabs/bin/puppetserver", "foreground"]
