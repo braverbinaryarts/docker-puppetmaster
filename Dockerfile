@@ -13,7 +13,7 @@ RUN curl -o /root/puppet-repo.deb -s https://apt.puppetlabs.com/puppetlabs-relea
 
 # Install puppetserver
 RUN apt-get update && apt-get install -y \
-  puppetserver 
+  puppetserver
 
 # expose puppet
 EXPOSE 8140
