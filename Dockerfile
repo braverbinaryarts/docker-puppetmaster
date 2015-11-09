@@ -24,7 +24,7 @@ ADD scripts/puppetmaster.sh /etc/service/puppetmaster/run
 ADD configs/defaults/puppetmaster /etc/defaults/puppetmaster
 
 # Copy init scripts to /etc/my_init.d
-COPY scripts/my_init.d/* /etc/my_init.d
+COPY scripts/my_init.d/* /etc/my_init.d/
 
 VOLUMES["/opt/puppetlabs/storage"]
 
